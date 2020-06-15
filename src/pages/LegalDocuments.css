@@ -1,0 +1,73 @@
+.docsHeading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin: 2rem auto;
+}
+
+.docsPara {
+    font-size: 1.5rem;
+}
+
+.docsContainer {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+     margin-top: 2rem; 
+}
+
+.docsPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.docsSubHeading {
+    font-size: 2rem;
+    font-weight: bold; 
+    margin: 1rem 0
+}
+
+.aboutUsMainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+.submitButton{
+    width: min-content;        
+}
+
+
+.aboutUs {
+    width: 100%;
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 776px){
+    .aboutUs {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 5% 5%;
+        width: 40%;        
+    }
+    .aboutUsMainContainer {
+        flex-direction: row;
+    }
+    
+    .submitButton{
+        width: auto;
+        justify-content: flex-end;
+        
+    }
+}

@@ -1,0 +1,26 @@
+.LandmarkContainer {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.viewMore {
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color:#0075d2; 
+    height: 2rem;
+    width: 20vw;
+    margin: 1rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 992px) {
+   .LandmarkContainer {
+       font-size: 2rem;
+   }
+   .viewMore {
+       height: 3rem;
+       width: 5vw;
+   } 
+}

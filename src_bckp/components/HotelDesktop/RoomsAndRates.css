@@ -1,0 +1,103 @@
+
+.loading {
+    display: flex; 
+    justify-content: center; 
+    align-Items: center;
+    height: 50vh;
+}
+
+.RoomsAndRatesContainer {
+    width: calc(100vw - 2rem);
+    margin: 1rem;
+}
+
+.combinationCostscontainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 2rem);
+    height: auto;
+ 
+
+}
+
+.combinationImageName {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.RoomsImageContainer {
+    height: 25vw;
+    width: calc(100vw - 2rem);
+
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+}
+
+.RoomsImage {
+    height: 25vw;
+    width: 33vw;
+    flex: 0 0 auto;
+
+    background-size: cover;
+    margin-right: 2px;
+    background-position: center center
+}
+
+.combinationCostscontainerroomName {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.facilities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facility {
+    margin:0.25rem 0;
+    width:50%;
+}
+.roomsPrices {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100vw - 2rem);
+    height: auto;
+}
+
+@media screen and (min-width: 776px){
+
+   .RoomsAndRatesContainer {
+       width: 75vw;
+   }
+   .roomsPrices {
+       width: 75vw;
+   }
+   .combinationCostscontainer{
+       width: 75vw;
+
+   }
+   .RoomsImageContainer {
+       width: 75vw;
+   }
+   .combinationCostscontainerroomName {
+    font-size: 2rem;
+   }
+   .facility{
+       width: 25%;
+       margin: 1rem 0;
+   }
+   .RoomsImage {
+    height: 20vh;
+    width: 30vh;
+   }
+   .RoomsImageContainer {
+        height: 20vh;
+    }
+}

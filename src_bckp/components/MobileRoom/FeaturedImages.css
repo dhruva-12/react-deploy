@@ -1,0 +1,32 @@
+.featuredImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredImages .firstRow {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+
+}
+
+.featuredImages .firstRow .imageContainer {
+    height: 49.5vw;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    /* margin: 0 auto; */
+}
+.featuredImages .firstRow .smallImageContainer {
+    flex: 0 0 auto;
+    height: 25vw;
+    width: 33vw;
+    background-size: cover;
+    margin-right: 1vw;
+    background-position: center center;
+}
+
+

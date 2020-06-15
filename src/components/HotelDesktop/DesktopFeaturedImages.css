@@ -1,0 +1,37 @@
+
+.DesktopFeaturedImagesContainer {
+
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    background-position: center center;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.DesktopFeaturedImagesContainer .mainImage {
+    height: 60vh;
+    width: 40vw;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.DesktopFeaturedImagesContainer .sideImageContainer {
+    height: 60vh;
+    /* width: 30vw; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.sideImage {
+    height: calc(30vh - 0.125rem);
+    margin-left: 0.25rem;
+    width: 27vw;
+    flex: 0 0 auto; 
+    background-size: cover;
+    background-position: center center;
+}

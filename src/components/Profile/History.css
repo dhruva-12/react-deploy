@@ -1,0 +1,24 @@
+.historyContainer {
+    width: 80vw;
+    /* background-color: #ececec; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historyContainer table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.historyContainer th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+.historyContainer tr:nth-child(even){background-color: #f2f2f2}
+  
+.historyContainer th {
+    background-color: #f48247;
+    color: white;
+}

@@ -1,0 +1,16 @@
+.reviewsContainer {
+    margin:1rem;
+    margin-top: 0;
+    display: flex;
+    font-size: 1rem;
+}
+
+.reviewStars {
+    margin: 0 0.5rem
+}
+
+@media screen and (min-width: 992px) {
+    .reviewsContainer {
+        font-size:2rem; 
+    }
+}

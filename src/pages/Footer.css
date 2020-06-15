@@ -1,0 +1,82 @@
+.LPFooter {
+    display: none;
+}
+.LowerFooter {
+    display: none;
+}
+
+.FooterColumn > span {
+    margin: 0.5rem 0
+}
+
+.footersocial {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+}
+@media screen and (min-width: 776px) {
+.LPFooter {
+	margin-top: 2rem;
+    background-color: #323232;
+    padding: 3rem;
+	/* width: 100vw; */
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    font-size: 1.25rem;
+
+}
+
+.FooterColumn {
+    display: flex;
+    flex-direction: column;
+    color: #878787;
+
+
+}
+
+.FooterHeading {
+    /* font-weight: bold; */
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.FooterColumn a {
+    text-decoration: none;
+    color: #878787;
+}
+
+.FooterColumn a:hover {
+    color: #979696;
+}
+
+.LowerFooter {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #323232;
+    height: 10vh;
+
+    color: #878787;
+
+    font-size: 1.5rem;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    border-top: 1px solid #878787;
+
+}
+
+.footersocial {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+}

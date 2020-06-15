@@ -1,0 +1,437 @@
+.LPSearch {
+	/* max-width: 100%; */
+	/* height: 100%;
+    width: 100%; */
+
+	height: 75vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-image: url("./../images/Landing Page/1.jpg");
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.LPSearchContainer {
+	height: 75vh;
+    width: 100vw;
+    display:none;
+}
+
+.LPPopularDestinations {
+	display: none;
+}
+
+.LPMobile{
+    display: inline-block;
+
+    /* padding: 1rem 0; */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(100,151,172,1) 0%, rgba(185,209,219,1) 100%); 
+  /* padding-bottom: 2rem; */
+  height: 100vh;
+
+  justify-content: space-evenly;
+}
+
+
+
+.LPSearchcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60vw;
+	margin-bottom: auto;
+	/* margin-bottom: 5vh; */
+}
+
+.LPSearchbar {
+	width: 45vw;
+	border: none;
+	height: 5rem;
+	padding: 2rem;
+	font-size: 1.5rem;
+	/* margin: 1rem; */
+	/* border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem; */
+	outline: 0;
+}
+
+.LPSearchcenter .ant-select-selection {
+	border:none !important;
+}
+
+.orangeSearch .LPSearchButton {
+	height: 6rem;
+	padding: 0rem 4rem;
+	font-size: 2rem;
+	border: none;
+	background-color: #f48247;
+	color: white;
+
+	/* border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem; */
+
+    cursor: pointer;
+	margin: 1rem;
+	outline: 0;
+}
+
+.ant-calendar-input-wrap {
+	display: none;
+}
+
+.LPSearchButton {
+	height: 5rem;
+	padding: 0rem 2rem;
+	font-size: 2rem;
+	border: none;
+	background-color: #f48247;
+	color: white;
+
+	/* border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem; */
+
+    cursor: pointer;
+	/* margin: 1rem; */
+	outline: 0;
+}
+
+.LPnavbar {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	align-self: flex-start;
+
+	height: 6vh;
+	background-color: transparent;
+
+	margin-top: 2rem;
+
+	align-items: center;
+	
+}
+.LPnavbarfixed {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	align-self: flex-start;
+
+	height: 8vh;
+	background-color: transparent;
+	align-items: center;
+
+	position: fixed;
+	z-index: 2;
+	padding: 1rem;
+	/* border-bottom: 2px solid rgb(233, 232, 232); */
+	
+	
+}
+
+
+.orangeSearch .LPnavbar {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	align-self: flex-start;
+
+	height: 6vh;
+	background-color: transparent;
+
+	/* margin-top: 2rem; */
+}
+
+.logoLP {
+	all: revert;
+	height: 6vh;
+	width: 20vh;
+	background-size: contain;
+	background-image: url("./../images/Landing Page/logo-full.png");
+	margin-left: 10vw;
+	/* border: 1px white; */
+	margin-right: auto;
+}
+
+.LPnavbar a,
+.LPnavbar a:hover,
+.LPnavbar a:active,
+.LPnavbar a:visited {
+	color: white;
+	font-size: 1.5rem;
+	margin: 1rem;
+}
+
+.LPDiscover {
+	display: flex;
+	justify-content: flex-end;
+	color: white;
+	flex-direction: column;
+
+	height: 30vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.LPDiscovery {
+	height: 400vh;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.LPDiscoveryHeading {
+	font-size: 3rem;
+	text-align: center;
+	/* font-weight: bold; */
+}
+
+.LPRow {
+	width: 90vw;
+	height: auto;
+	/* background-color: yellow; */
+
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 0 5vw;
+    flex-wrap: wrap;
+}
+
+
+.LPRowImage {
+    width: 300px;
+    height:300px;
+	/* height: 100%; */
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+
+    margin: 0.25rem;
+    transition: .3s;
+}
+
+.LPCard {
+	height: 380px;
+	width: 212px;
+
+	display: flex;
+	flex-direction: column;
+	border: 1px solid lightgray;
+	margin: 5px;
+}
+
+.LPCardImage {
+	height: 260px;
+	width: 210px;
+
+	background-size: cover;
+	background-position: center center;
+
+	text-align: right;
+}
+
+.cardHolder {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: auto;
+	width: 95vw;
+	margin: 0 2.5vw;
+}
+
+.LPButton {
+	border: 0;
+	margin: 1px;
+	background-color: transparent;
+	font-size: 2rem;
+	text-align: end;
+
+	color: lightslategray;
+}
+
+
+
+.orangeSearch .ant-calendar-picker-input.ant-input {
+	border-radius: 10px;
+
+	height: 5rem;
+	padding: 0rem 1rem;
+	font-size: 16px;
+	border: 2px solid #f48244;
+
+}
+
+.orangeSearch .ant-select-selection{
+	height: 5rem !important;
+	border: 2px solid #f48244 !important;
+	border-radius: 10px !important;
+}
+.orangeSearch .ant-calendar-range-picker-separator {
+	vertical-align: unset;
+}
+
+.LPSearchContainer .ant-select-selection--single {
+	
+	height: 5rem !important;
+	border-radius: 0 !important;
+}
+
+.orangeSearch .anticon .anticon-calendar .ant-calendar-picker-icon {
+	display: none;
+}
+
+.orangeSearch .ant-select {
+	font-size: 16px;
+}
+
+.orangeSearch .ant-select-selection-selected-value {
+	height: 5rem;
+	display: flex !important;
+	align-items: center;
+}
+
+.orangeSearch .ant-select-selection__rendered {
+	height: 5rem;
+	vertical-align: middle;
+}
+
+.orangeSearch .ant-select-selection {
+	border-radius: 0;
+}
+
+
+.orangeSearch .ant-calendar-input-wrap {
+      display: none;
+  }
+
+.orangeSearch .ant-input::placeholder {
+	color:#595959;
+}
+
+.orangeSearch .orangeSearchbar ::placeholder {
+	color: #595959;
+}
+
+.orangeSearch .orangeSearchbar::placeholder {
+	color: #000000;
+}
+.LPImageBlack {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    
+;
+    transition: .3s;
+}
+
+.LPImageBlack:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+
+}
+
+.orangeSearchMenu {
+	display: flex;
+	justify-content: flex-end;
+
+	height: 5vh;
+	width: 90%;
+	/* margin: 1rem; */
+
+	font-size: 3rem;
+	color: white;
+
+
+}
+
+
+
+.LPSearchContainer .ant-calendar-picker-input.ant-input {
+	border-radius: 0;
+
+	height: 5rem;
+	padding: 0rem 1rem;
+	font-size: 1.5rem;
+	border: none;
+}
+.LPSearchContainer .ant-calendar-range-picker-input::placeholder {
+	color: #888888 !important;
+}
+
+.LPSearchContainer .ant-calendar-range-picker-separator {
+	vertical-align: unset;
+}
+
+.LPSearchContainer .ant-select-selection--single {
+	height: 5rem;
+}
+
+.LPSearchContainer .ant-select-selection-selected-value {
+	height: 5rem;
+	display: flex !important;
+	align-items: center;
+}
+
+.LPSearchContainer .ant-select-selection__rendered {
+	height: 5rem;
+	vertical-align: middle;
+}
+
+.LPSearchContainer .ant-select-selection {
+	border-radius: 0;
+}
+
+
+@media screen and (min-width: 776px) {
+    .LPSearchContainer {
+        height: 75vh;
+        width: 100vw;
+        display: inline-block;
+    } 
+    .LPMobile{
+        display: none;
+	}
+	.LPPopularDestinations {
+		display: inline-block;
+		
+	}
+	.orangeSearch .ant-calendar-picker-input.ant-input {
+			height: 4rem;
+	}
+	.orangeSearch .ant-select-selection__rendered {
+		height: 4rem;
+	}
+	.orangeSearch .ant-select-selection-selected-value {
+		height: 4rem;
+	}
+	.orangeSearch .ant-select-selection {
+		height: 4rem !important;
+	}
+	.orangeSearch .LPSearchButton {
+		height: 5rem;
+	}
+}

@@ -1,0 +1,19 @@
+.HotelLocationContainer{
+    font-size: 1rem;
+}
+
+.ReferenceMap {
+    height:25vw;
+    background-color: #fef6e9;
+}
+
+@media screen and (min-width: 992px) {
+    .HotelLocationContainer{
+        font-size: 2rem;
+
+    } 
+
+    .ReferenceMap{
+        height: 20vh;
+    }
+}

@@ -1,0 +1,189 @@
+
+.roomUIList .filterTop {
+    background-color:#eb2147; 
+    width: 80%; 
+    height: 0.7rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+.roomUIList .filterSelect {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 2rem);
+    margin-bottom: 1rem;
+	
+}
+
+.filterSelect .ant-select-selection {
+    border-radius: 1px !important;
+    border: none;
+    width: 80vw;
+
+}
+.ant-input-number {
+    font-size: 16px !important;
+}
+.roomFinalMain {
+    background: linear-gradient(180deg, rgba(100,151,172,1) 0%, rgba(185,209,219,1) 100%); 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.roomUIList .filter {
+    display: none;
+}
+
+.desktopSearch {
+    display: none;
+}
+
+.mobileSearch {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.fliterMainContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slidermaincontainer {
+    display: flex;
+
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.sliderStyle {
+    display: none;
+}
+
+.ant-input-number {
+    width: 33vw;
+}
+
+.FilterControl {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.scrollToTopClass {
+    border: 2px solid #f48247 !important;
+    background-color: #f48247 !important;
+    color: white;
+    font-size: 2rem;
+
+    z-index: 15;
+    border-radius: 50% !important;
+    height: 5rem;
+    width: 5rem;
+    bottom: 10% !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.budgettext{
+    font-size: 15px;
+    padding-left: 8%;
+    padding-top: 12px;
+}
+
+.sliderfilterclassmain{
+	padding-left:17%
+
+}
+.buttonslider{
+	float:right;
+}
+
+@media screen and (min-width: 776px){
+    .roomUIList .filterSelect {
+        /* display: none; */
+        width: 20vw;
+        /* align-self: flex-end; */
+        justify-content: flex-end;
+    }
+    .filterSelect .ant-select-selection {
+        border-radius: 1px !important;
+        border: none;
+        width: 20vw;
+    
+    }
+    .roomUIList .filterTop {
+        background-color:#eb2147; 
+        width: 20vw; 
+        height: 0.7rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        margin: 0;
+    }
+    .fliterContainer {
+        width: 20vw;
+    }
+
+    .fliterMainContainer {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sliderStyle {
+        display: flex;
+        width: 20vw;
+    }
+    
+    .slidermaincontainer {
+        display: flex;
+        width: 20vw;
+        justify-content: space-evenly;
+    }
+    
+    .mobileSlider {
+        display: none;
+    }
+
+    .ant-input-number {
+        width: 90px;
+    }
+    /* .roomUIList .filter {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: #eb2147; 
+    }
+
+    .roomUIList .filterButton {
+        background-color: #eb2147;
+        border-color: #eb2147;
+        border-radius: 0%;
+        width: 33.3%;
+        border-bottom-width: 0;
+        border-bottom-color: white;
+    } */
+    .roomFinalMain {
+        background: none;
+    }
+    .desktopSearch {
+        display: flex;
+    }
+    .mobileSearch {
+        display: none;
+    }
+    .FilterControl {
+        display: none;
+    }
+    .desktopCurrency {
+        display: none !important;
+    }
+}

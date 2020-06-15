@@ -1,0 +1,415 @@
+.roomUIList {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 1rem auto;
+
+    
+
+  
+}
+
+.roomUI {
+    width: 95vw;
+    /* height: 100vw; */
+
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+
+   
+
+}
+.roomUIimagecontainer {
+    width: 95vw;
+    height: auto;
+
+    margin: auto;
+    display: flex;
+    align-content: center;
+
+
+
+}
+
+.roomUIimage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vw;
+    width: 90vw;
+    margin: auto;
+    margin-top: 1rem;
+    background-position: center; 
+}
+
+.roomUIData {
+    height: 40vw;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+.roomType {
+    background-color: #087313;
+    color: white;
+    border-radius: 2px;
+    padding: 2px 5px;
+
+    margin: 0 0.5rem;
+}
+
+.roomName {
+    font-size: 1.5rem;
+    color: #036ec0;
+    text-overflow: ellipsis;
+    max-width: 65%;
+    overflow: hidden;
+white-space: nowrap;
+}
+.stars {
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    margin: 0 0.5rem;
+    padding: 2px 5px;
+
+}
+.roomIcons{
+    display: flex;
+    margin-top: auto;
+}
+
+.roomUIDataLeft{
+    display: flex;
+    flex-direction: column;
+}
+.roomDataRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-left: auto;
+}
+
+.roomUIPrice {
+    color: #eb2147;
+    font-size: 2rem;
+}
+
+.roomUIpriceheading{
+    font-size: .75rem;
+ 
+}
+
+.roomUIMore{
+    color: white;
+    background-color: #e12345;
+    padding: .5rem 1rem;
+    border-radius:1rem;
+    cursor: pointer;
+}
+
+.expandedFeatures{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.expandedFeaturesContainer{
+    display: inline-block;
+    width: 75vw;
+
+    transition: 1s;
+}
+
+.roomUIContainer {
+
+    border-bottom: 1px solid black ;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    /* flex-shrink: 2; */
+
+    /* border: 1px solid black; */
+    width: 95vw;
+
+    background-color: white;
+  
+   
+}
+
+.carouselContainer{
+    display: flex;
+    flex-direction: column;
+}
+/* 
+@media screen and (min-width: 776px) {
+    
+    .roomUIList {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        margin:0;
+    }
+
+    .roomUIContainer {
+        width: 70vw;
+    }
+
+    .carouselContainer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 20vw;
+        margin: auto 1rem;
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .roomUIList {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        margin:0;
+    }
+    
+    .roomUI {
+        width: 70vw;
+        height: 25vw;
+    
+        display: flex;
+        flex-direction: row;
+    
+        
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+       
+    
+    }
+    .roomUIimagecontainer {
+        width: 20vw;
+        height: auto;
+    
+        margin: 0 auto;
+        display: flex;
+
+        
+        flex-direction: column;
+      
+     
+    }
+    
+    .roomUIimage {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 20vw;
+        width: 20vw;
+
+        margin: auto ;
+        
+
+    }
+    
+    .roomUIData {
+        height: 20vw;
+        width: 50vw;
+        margin: auto 1rem;
+        display: flex;
+    
+    }
+    
+    .roomType {
+        background-color: #087313;
+        color: white;
+        border-radius: 2px;
+        padding: 2px 5px;
+    
+        margin: 0 0.5rem;
+    }
+    
+    .roomName {
+        font-size: 2rem;
+        color: #0076cd;
+        font-weight:550;
+    }
+
+    .roomUIPrice {
+        color: #eb2147;
+        font-size: 3rem;
+    }
+    
+    .roomUIpriceheading{
+        font-size: 1rem;
+     
+    }
+
+    .roomUIContainer {
+
+        border-bottom: 1px solid black ;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    
+        border: 1px solid black;
+        width: 70vw;
+        border:none;
+        border-bottom: 1px solid black ;
+       
+    }
+} */
+@media screen and (min-width: 992px) {
+    .roomUIList {
+        display: flex;
+        flex-direction: column;
+        width: 75vw; 
+        margin: 0 auto;
+    
+      
+    }
+    
+    .roomUI {
+        width: calc(95vw * 0.25);
+        /* height: calc(100vw * 0.25); */
+    
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+    
+       
+    
+    }
+    .roomUIimagecontainer {
+        width: calc(95vw * 0.25);
+        height: auto;
+    
+        margin: auto;
+        display: flex;
+        align-content: center;
+    
+    
+    
+    }
+    
+    .roomUIimage {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: calc(60vw * 0.25);
+        width: calc(90vw * 0.25);
+        margin: auto;
+        margin-top: 1rem;
+        background-position: center; 
+    }
+    
+    .roomUIData {
+        height: calc(40vw * 0.25);
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        
+    
+    
+    }
+    
+    .roomType {
+        background-color: #087313;
+        color: white;
+        border-radius: 2px;
+        padding: 2px 5px;
+    
+        margin: 0 0.5rem;
+    }
+    
+    .roomName {
+        font-size: 1.5rem;
+        color: #036ec0;
+        text-overflow: ellipsis;
+        max-width: 65%;
+        overflow: hidden;
+    white-space: nowrap;
+    }
+    .stars {
+        border: 1px solid lightgray;
+        border-radius: 1px;
+        margin: 0 0.5rem;
+        padding: 2px 5px;
+    
+    }
+    .roomIcons{
+        display: flex;
+        margin-top: auto;
+    }
+    
+    .roomUIDataLeft{
+        display: flex;
+        flex-direction: column;
+    }
+    .roomDataRight{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+        margin-left: auto;
+    }
+    
+    .roomUIPrice {
+        color: #eb2147;
+        font-size: 2rem;
+    }
+    
+    .roomUIpriceheading{
+        font-size: .75rem;
+     
+    }
+    
+    .roomUIMore{
+        color: white;
+        background-color: #e12345;
+        padding: .5rem 1rem;
+        border-radius:1rem;
+        cursor: pointer;
+    }
+    
+    .expandedFeatures{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .expandedFeaturesContainer{
+        display: inline-block;
+        width: calc(75vw * 0.25);
+    
+        transition: 1s;
+    }
+    
+    .roomUIContainer {
+    
+        border-bottom: 1px solid black ;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        /* flex-shrink: 2; */
+    
+        /* border: 1px solid black; */
+        width: 25vw;
+    
+        background-color: white;
+      
+       
+    }
+    
+    .carouselContainer{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .roomfinalcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

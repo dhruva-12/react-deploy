@@ -1,0 +1,39 @@
+.HotelMobileContainer {
+    background: linear-gradient(180deg, rgba(100,151,172,1) 0%, rgba(185,209,219,1) 100%); 
+    display: flex;
+    flex-direction: column;
+}
+
+.HotelDesktopContainer {
+    display:none
+}
+
+
+@media screen and (min-width: 992px) {
+    .HotelMobileContainer {
+        display: none;
+    }
+    .HotelDesktopContainer {
+        display: inline-block;
+    }
+
+    .HotelDesktopContainer .HoteldataContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .HotelDesktopContainer .mainData {
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+@media screen and (min-width: 1300px) {
+       .HotelDesktopContainer .mainData {
+            width: 75vw;;
+       }
+}
