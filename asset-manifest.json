@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/react-deploy/static/css/main.5f5269ec.chunk.css",
+    "main.js": "/react-deploy/static/js/main.b585aad7.chunk.js",
+    "main.js.map": "/react-deploy/static/js/main.b585aad7.chunk.js.map",
+    "runtime-main.js": "/react-deploy/static/js/runtime-main.db56dd4a.js",
+    "runtime-main.js.map": "/react-deploy/static/js/runtime-main.db56dd4a.js.map",
+    "static/css/2.1e105a3b.chunk.css": "/react-deploy/static/css/2.1e105a3b.chunk.css",
+    "static/js/2.d1885069.chunk.js": "/react-deploy/static/js/2.d1885069.chunk.js",
+    "static/js/2.d1885069.chunk.js.map": "/react-deploy/static/js/2.d1885069.chunk.js.map",
+    "index.html": "/react-deploy/index.html",
+    "precache-manifest.060c351a06b64a9105be62fcc719538d.js": "/react-deploy/precache-manifest.060c351a06b64a9105be62fcc719538d.js",
+    "service-worker.js": "/react-deploy/service-worker.js",
+    "static/css/2.1e105a3b.chunk.css.map": "/react-deploy/static/css/2.1e105a3b.chunk.css.map",
+    "static/css/main.5f5269ec.chunk.css.map": "/react-deploy/static/css/main.5f5269ec.chunk.css.map",
+    "static/js/2.d1885069.chunk.js.LICENSE": "/react-deploy/static/js/2.d1885069.chunk.js.LICENSE",
+    "static/media/LandingPage.css": "/react-deploy/static/media/logo-full.a4ea859c.png",
+    "static/media/Navbar1.css": "/react-deploy/static/media/111.de3fe2db.jpg",
+    "static/media/1858.jpg": "/react-deploy/static/media/1858.29814267.jpg",
+    "static/media/241.jpg": "/react-deploy/static/media/241.cf543277.jpg",
+    "static/media/609.jpg": "/react-deploy/static/media/609.9853a616.jpg",
+    "static/media/612.jpg": "/react-deploy/static/media/612.bdb218f0.jpg",
+    "static/media/661.jpg": "/react-deploy/static/media/661.1d2da5e8.jpg",
+    "static/media/App.css": "/react-deploy/static/media/roomsbg.6b1a770f.jpg",
+    "static/media/cmp163.jpg": "/react-deploy/static/media/cmp163.ab66695c.jpg",
+    "static/media/des1.jpg": "/react-deploy/static/media/des1.bd762bca.jpg",
+    "static/media/des10.jpg": "/react-deploy/static/media/des10.e7e96c86.jpg",
+    "static/media/des2.jpg": "/react-deploy/static/media/des2.b9f625c5.jpg",
+    "static/media/des5.jpg": "/react-deploy/static/media/des5.9f2f03b0.jpg",
+    "static/media/des8.jpg": "/react-deploy/static/media/des8.2ab4c3cf.jpg",
+    "static/media/room-1.jpeg": "/react-deploy/static/media/room-1.e928a5c4.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db56dd4a.js",
+    "static/css/2.1e105a3b.chunk.css",
+    "static/js/2.d1885069.chunk.js",
+    "static/css/main.5f5269ec.chunk.css",
+    "static/js/main.b585aad7.chunk.js"
+  ]
+}
