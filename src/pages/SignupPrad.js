@@ -5,12 +5,6 @@ import axios from "axios";
 import { MDBAlert } from "mdbreact";
 
 import Navbar2 from "../components/Navbar1/Navbar2/Navbar2";
-import PasswordStrengthMeter from "../components/passwordStrength/PasswordStrengthMeter";
-
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
-
-
 class SignupPrad extends Component {
 	constructor(props) {
 		super(props);
@@ -22,7 +16,6 @@ class SignupPrad extends Component {
 			name: "",
 			email: "",
 			password: "",
-			passwordConfirm:true,
 			errors: [],
 			registered: false
 		};
@@ -46,27 +39,13 @@ class SignupPrad extends Component {
 		});
 	};
 
-	handlePasswordConfirm = event => {
-		if(event.target.value === this.state.password) {
-			this.setState({
-				passwordConfirm: true
-			});
-		}else {
-			this.setState({
-				passwordConfirm: false
-			});
-		}
-	}
-
 	handleSubmit = event => {
 		event.preventDefault();
 		console.log("Signup Details - ");
 		console.log("Name: " + this.state.name);
 		console.log("Email: " + this.state.email);
-		console.log("Password: " + this.state.password);	
-		// ---------------------------------
-		// this.props.history.push(`/login`);	
-		// ---------------------------------
+		console.log("Password: " + this.state.password);
+
 		try {
 			axios
 				.post("users/register", {
@@ -80,7 +59,7 @@ class SignupPrad extends Component {
 					if (response.data === "Success: Registration successful") {
 						console.log("Registered");
 
-						this.props.history.push(`/login`)
+						// this.props.history.push(`/login`)
 						this.setState({ registered: true });
 					} else if (response.data === "Error: User already exists") {
 						let arr = [];
@@ -100,17 +79,6 @@ class SignupPrad extends Component {
 	};
 
 	render() {
-
-		// ------------------- this code use for facebook and google login-------------------------
-		const responseFacebook = (response) => {
-			console.log(response);
-		  }
-	  
-		  const responseGoogle = (response) => {
-			console.log(response);
-		  }
-		//----------------------------------------------------------------------------------------
-
 		const err = (
 			<MDBAlert color="danger">
 				{this.state.errors.map((error, i) => (
@@ -137,8 +105,8 @@ class SignupPrad extends Component {
 					<Navbar2 source="signup" />
 					<div className="spacer" />
 
-					<div className="main" style={{backgroundColor:'red'}}>
-						<div className="detailsform" style={{backgroundColor:'red'}}>
+					<div className="main" style={{ backgroundColor: "white" }}>
+						<div className="detailsform" style={{ backgroundColor: "lightskyblue" }}>
 							<div className="select">
 								<Link
 									to="/signup"
@@ -191,45 +159,41 @@ class SignupPrad extends Component {
 									required
 								/>
 								<br />
-								<PasswordStrengthMeter  password={this.state.password}/>
-								
+								<br />
+
 								<input
 									className="inputBox"
 									type="password"
-									placeholder="Confirm Password"
-									onChange={this.handlePasswordConfirm}
+									placeholder="ConfirmPassword"
+									onChange={this.handlePassword}
 									required
-								/>															
-								<br />
-								{this.state.passwordConfirm?
-								<label></label>
-								:
-								<label style={{color:'red'}}>Password Not Match to Confirm password</label>}	
+								/>
+
+<br />
 								<br />
 								<div className="signupContainer">
 									<button
 										type="submit"
 										onSubmit={this.handleSubmit}
-										disabled={!this.state.passwordConfirm}
 									>
-										<div className="signupButton" style={{backgroundColor:'white',color:'red'}}>
-											Sign Up
+										<div className="signupButton">
+											Create an Account
 										</div>
 									</button>
 								</div>
 
 								<br />
 								<br />
-								{/* ---------------------------------- */}
+								<br/>
+
 								{/* <div className="or">
                                     <div className="line" />
                                     <span>or connect with</span>
                                     <div className="line" />
                                 </div> */}
-								{/* --------------------------------- */}
 							</form>
-							 {/* ------------------- this code use for facebook and google login------------------------- */}
-                            {/* <div className="connectWith">
+							{/* 
+                            <div className="connectWith">
                                 <GoogleLogin
                                     clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
                                     // buttonText="Login"
@@ -248,7 +212,6 @@ class SignupPrad extends Component {
                                 />
 
                             </div> */}
-							 {/* ------------------- this code use for facebook and google login------------------------- */}
 						</div>
 					</div>
 					{/* <FooterPage /> */}

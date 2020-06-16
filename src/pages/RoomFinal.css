@@ -124,12 +124,15 @@
 }
 
 .buttonslider{
-	float:right;
+margin-left: 80px;
 }
 
 .ant-checkbox-group .ant-checkbox-wrapper {
     width: 100% !important;
 }
+
+
+
 @media screen and (min-width: 776px){
     .filterSelect {
         /* display: none; */
@@ -141,7 +144,7 @@
     .filterSelect .ant-select-selection {
         border-radius: 1px !important;
         /* border: none; */
-        width: 20vw;
+        width: 17vw;
         border-color: red;
     
     }
@@ -164,7 +167,7 @@
     }
     .sliderStyle {
         display: flex;
-        width: 20vw;
+        width: 17vw;
     }
     
     .slidermaincontainer {
@@ -179,7 +182,10 @@
 
     .ant-input-number {
         width: 90px;
+        
     }
+   
+    
     /* .roomUIList .filter {
         display: flex;
         width: 100%;

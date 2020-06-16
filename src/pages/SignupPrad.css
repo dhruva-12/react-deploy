@@ -127,13 +127,10 @@
 		height: 4vw;
 		width: 30vw;
 		font-size: large;
-		border-bottom: 1px solid white;
-	background-color: red;
-	padding: 0rem;
 	}
 
 	.detailsform {
-		height: auto;
+		height: 75vh;
 		width: 35vw;
 		display: flex;
 		flex-direction: column;
@@ -159,12 +156,6 @@
 		color: #fff;
 	}
 
-	button[disabled] div{
-		border: 1px solid #999999 !important;
-		background-color: #cccccc !important;
-		color: #666666 !important;
-	  }
-
 	.topLoginButton {
 		width: 17.5vw;
 		height: 8vh;
@@ -189,7 +180,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	.detailsform {
-		height: auto;
+		height: 60vh;
 		width: 50vw !important;
 		display: flex;
 		flex-direction: column;
@@ -203,9 +194,6 @@
 		height: 4vw;
 		width: 45vw !important;
 		font-size: large;
-		border-bottom: 1px solid white;
-	background-color: red;		
-	padding: 0rem;
 	}
 
 	.signupButton {
@@ -248,7 +236,7 @@
 
 @media screen and (max-width: 768px) {
 	.detailsform {
-		height: auto;
+		height: 60vh;
 		width: 80vw !important;
 		display: flex;
 		flex-direction: column;
@@ -262,9 +250,6 @@
 		height: 8vw !important;
 		width: 75vw !important;
 		font-size: large;
-		border-bottom: 1px solid white;
-	background-color: red;
-	padding: 0rem;
 	}
 
 	.signupButton {

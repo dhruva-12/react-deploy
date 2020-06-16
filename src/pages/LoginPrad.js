@@ -1,12 +1,14 @@
+
+
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { MDBAlert } from "mdbreact";
 import "./LoginPrad.css";
-
-import Navbar2 from "../components/Navbar1/Navbar2/Navbar2";
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
+import Navbar2 from "../components/Navbar1/Navbar2/Navbar2";
+
 class LoginPrad extends Component {
 	constructor(props) {
 		super(props);
@@ -35,9 +37,7 @@ class LoginPrad extends Component {
 
 	handleSubmit = event => {
 		event.preventDefault();
-// ---------------------------------
-// this.props.history.push(`/`);	
-// --------------------------------
+
 		try {
 			axios
 				.post("users/login", {
@@ -71,17 +71,6 @@ class LoginPrad extends Component {
 	};
 
 	render() {
-		// ------------------- this code use for facebook and google login-------------------------
-		const responseFacebook = (response) => {
-			console.log(response);
-		  }
-	  
-		  const responseGoogle = (response) => {
-			console.log(response);
-		  }
-		//----------------------------------------------------------------------------------------
-
-
 		let success = false;
 
 		if (this.props.location.state && this.props.location.state.success) {
@@ -99,14 +88,21 @@ class LoginPrad extends Component {
 				))}
 			</MDBAlert>
 		);
+		const responseFacebook = (response) => {
+			console.log(response);
+			}
+		  
+			const responseGoogle = (response) => {
+			console.log(response);
+			}
 
 		return (
 			<React.Fragment>
 				<Navbar2 source="login" />
 				<div className="spacer" />
 
-				<div className="main" style={{backgroundColor:'red'}}>
-					<div className="detailsform" style={{backgroundColor:'red'}}>
+				<div className="main" style={{backgroundColor:"white"}}>
+					<div className="detailsform" style={{backgroundColor:"lightskyblue"}}>
 						<div className="select">
 							<Link
 								to="/signup"
@@ -134,15 +130,13 @@ class LoginPrad extends Component {
 						)}
 
 						{/* <div style={{height: "5vh"}} /> */}
-
+                         <br/>
 						<form className="form-group">
 							<input
 								className="inputBox"
 								type="email"
-								placeholder="Your Address"
+								placeholder="Email"
 								onChange={this.handleEmail}
-								// style={{'border-bottom': '1px solid red',
-								// 	'background-color': 'white'}}
 							/>
 							<br />
 							<br />
@@ -151,8 +145,6 @@ class LoginPrad extends Component {
 								type="password"
 								placeholder="Your Password"
 								onChange={this.handlePassword}
-								// style={{'border-bottom': '1px solid red',
-								// 	'background-color': 'white'}}
 							/>
 							<br />
 							<br />
@@ -167,7 +159,7 @@ class LoginPrad extends Component {
 							<br />
 
 							<div className="loginContainer">
-								<div style={{backgroundColor:'white',color:'red'}}
+								<div
 									className="loginButton"
 									onClick={this.handleSubmit}
 								>
@@ -180,12 +172,12 @@ class LoginPrad extends Component {
 
 							<div className="or">
                                 <div className="line" />
-                                <span>Sign in with social network</span>
+                                <span>or connect with</span>
                                 <div className="line" />
-                            </div>
+                            </div> 
 						</form>
 
-						<div className="connectWith">
+						 <div className="connectWith">
                             <GoogleLogin
                                 clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
                                 // buttonText="Login"
@@ -203,7 +195,7 @@ class LoginPrad extends Component {
                                 icon="fa-facebook"
                             />
 
-                        </div>
+                        </div> 
 					</div>
 				</div>
 				{/* <FooterPage /> */}

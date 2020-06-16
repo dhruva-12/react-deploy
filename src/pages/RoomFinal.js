@@ -422,6 +422,10 @@ const Rooms = (props) => {
             history={props.history}
             reset={true}
           />
+
+
+
+            
         )}
 
         <div className="desktopSearch">
@@ -438,7 +442,7 @@ const Rooms = (props) => {
           />
 		  </div>
 		  <div className="Filtertext">  Filters : </div>
-      <div style={{width: "23.5vw", margin: "0 2rem",border: "double", 
+      <div style={{width: "20.2vw", margin: "0 2rem",border: "double", 
       "border-radius": "2rem","color": "red","padding-left": "2rem"}}>
 		  <div className="budgettext">Budget: </div>
 		  <div className="slidermaincontainer">
@@ -481,6 +485,7 @@ const Rooms = (props) => {
               value={[minFilterPrice, maxFilterPrice]}
               onChange={onChangeRange}
               className="mobileSlider"
+              
             />
             {/* <Filter handleFilter={handleFilter} /> */}
 

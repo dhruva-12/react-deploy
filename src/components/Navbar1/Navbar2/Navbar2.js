@@ -85,7 +85,9 @@ export default class Navbar2 extends Component {
 				<nav className="nav">
 					<div className="container">
 						<div className="logo">
-							<a href="/">Your Logo</a>
+
+						<img className="logoLP" />
+							
 						</div>
 						<div id="mainListDiv" className="main_list">
 							<ul className="navlinks">
