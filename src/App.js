@@ -23,6 +23,7 @@ import AboutUs from './pages/AboutUs'
 import TOS from './pages/TOS';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ContactUs from './pages/ContactUs';
+import Admin from './pages/Admin';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route exact path="/SearchPage" component={SearchPage} />
         <Route exact path="/RoomUI" component={RoomUI} />
         <Route exact path="/Hotel/:slug" component={Hotel} />
+        <Route exact path="/Adminpanel" component={Admin} />
         <Route exact path="/AboutUs" component={AboutUs} />
         <Route exact path="/ContactUs" component={ContactUs} />
         <Route exact path="/termsandconditions" component={TOS} />
