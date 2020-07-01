@@ -268,11 +268,11 @@ export default class LandingPage extends Component {
 					<div className="LPnavbar" >
 						<div className="logoLP" />
 						<Link
-							to="/signup"
+							to="/Admin"
 							className="LPLink"
 							style={{ marginRight: "10vw" }}
 						>
-							Sign In
+							Sign In/Sign up
 						</Link>
 					</div>
 
