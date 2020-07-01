@@ -89,12 +89,6 @@ export default class Navbar1 extends Component {
 		this.setState({ address: e.target.value });
 	};
 
-	// handleSelect = address => {
-	// 	geocodeByAddress(address)
-	// 		.then(results => getLatLng(results[0]))
-	// 		.then(latLng => console.log("Success", latLng))
-	// 		.catch(error => console.error("Error", error));
-	// };
 
 	handleSelect = value => {
 		this.setState({
@@ -116,99 +110,7 @@ export default class Navbar1 extends Component {
 			return <Redirect to="/Rooms" />;
 		}
 		return (
-			// <div>
-			// 	<LandingPage />
-			// 	<div>
-			// 		<link href="./Navbar1.css" rel="stylesheet" />
-			// 		<div className="s002">
-			// 			<form action="Rooms">
-			// 				<fieldset>
-			// 					<legend>SEARCH HOTEL</legend>
-			// 				</fieldset>
-			// 				{/* <div className="form-group col-md-2">
-			// 					<label className="whileColorText">
-			// 						Country Code
-			// 					</label>
-			// 					<select
-			// 						id="inputState"
-			// 						className="form-control bgDropDown"
-			// 						value={this.state.countryCode}
-			// 						onChange={this.setCountryCode}
-			// 					>
-			// 						<option selected value="IN">
-			// 							India
-			// 						</option>
-			// 						<option value="MY">malaysia</option>
-			// 					</select>
-			// 				</div> */}
-			// 				<div className="inner-form">
-			// 					<div className="input-field first-wrap">
-			// 						<div className="icon-wrap">
-			// 							<svg
-			// 								xmlns="http://www.w3.org/2000/svg"
-			// 								width={24}
-			// 								height={24}
-			// 								viewBox="0 0 24 24"
-			// 							>
-			// 								<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-			// 							</svg>
-			// 						</div>
-			// 						<div>
-			// 							<input
-			// 								className="location-search-input"
-			// 								placeholder="Search Places"
-			// 								value={this.state.address}
-			// 								onChange={this.handleChange}
-			// 							/>
-			// 						</div>
-			// 					</div>
-			// 					<div className="input-field second-wrap location-search-input">
-			// 						<div className="icon-wrap">
-			// 							<svg
-			// 								xmlns="http://www.w3.org/2000/svg"
-			// 								width={24}
-			// 								height={24}
-			// 								viewBox="0 0 24 24"
-			// 							>
-			// 								<path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" />
-			// 							</svg>
-			// 						</div>
-
-			// 						<DatePicker
-			// 							onChange={this.onStartChange}
-			// 							placeholder="Checkin"
-			// 						/>
-			// 					</div>
-			// 					<div className="input-field second-wrap">
-			// 						<div className="icon-wrap">
-			// 							<svg
-			// 								xmlns="http://www.w3.org/2000/svg"
-			// 								width={24}
-			// 								height={24}
-			// 								viewBox="0 0 24 24"
-			// 							>
-			// 								<path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" />
-			// 							</svg>
-			// 						</div>
-			// 						<DatePicker
-			// 							onChange={this.onEndChange}
-			// 							placeholder="Checkout"
-			// 						/>
-			// 					</div>
-
-			// 					<div className="input-field fifth-wrap">
-			// 						<button
-			// 							className="btn-search"
-			// 							onClick={this.sendData}
-			// 						>
-			// 							SEARCH
-			// 						</button>
-			// 					</div>
-			// 				</div>
-			// 			</form>
-			// 		</div>
-			// 	</div>
-			// </div>
+			
 
 			<React.Fragment>
 				<div className="LPSearchContainer">
@@ -216,11 +118,11 @@ export default class Navbar1 extends Component {
 						<div className="LPnavbar">
 							<img className="logoLP" />
 							<Link
-								to="/signup"
+								to="/Admin"
 								className="LPLink"
 								style={{ marginRight: "10vw" }}
 							>
-								Sign In
+								Sign up
 							</Link>
 						</div>
 
@@ -291,11 +193,11 @@ export default class Navbar1 extends Component {
 					<div className="LPnavbar" style={{ marginBottom: "2rem" }}>
 						<img className="logoLP" />
 						<Link
-							to="/signup"
+							to="/Admin"
 							className="LPLink"
 							style={{ marginRight: "10vw" }}
 						>
-							Sign In
+							Sign 
 						</Link>
 					</div>
 

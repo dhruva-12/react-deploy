@@ -13,28 +13,7 @@ export default function Home() {
 		<>
 			<Navbar2 source="Home" />
 			<Navbar1 />
-			{/* <LandingPageSearchBar />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<Hero>
-				<Banner
-					title="luxurious room"
-					subtitle="deluxe rooms starting at ₹5000"
-				>
-					<Link to="/rooms" className="btn-primary">
-						our rooms
-					</Link>
-				</Banner>
-			</Hero>
-			<Services />
-			<LandingPageHero />
-
-			<FeaturedRooms />
-			<FooterPage /> */}
+			
 		</>
 	);
 }

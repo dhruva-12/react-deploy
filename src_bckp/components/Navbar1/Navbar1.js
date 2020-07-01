@@ -216,7 +216,7 @@ export default class Navbar1 extends Component {
 						<div className="LPnavbar">
 							<img className="logoLP" />
 							<Link
-								to="/signup"
+								to="/Adminpanel"
 								className="LPLink"
 								style={{ marginRight: "10vw" }}
 							>

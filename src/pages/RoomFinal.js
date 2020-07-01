@@ -36,15 +36,19 @@ const Rooms = (props) => {
     localStorage.getItem("filter") ? localStorage.getItem("filter") : "ph"
   );
   const [inProgress, setProgress] = useState(true);
-  const [search, setSearch] = useState(false);
+  //const [search, setSearch] = useState(false);
   const [minHotelPrice, setMin] = useState(0);
   const [maxHotelPrice, setMax] = useState(100);
   const [indeterminate, setIntermidiate] = useState(false);
+  const [search, setSearch] = useState(false);
   const [minFilterPrice, setFilterMin] = useState(minHotelPrice);
   const [maxFilterPrice, setFilterMax] = useState(maxHotelPrice);
   const [seeFilters, setseeFilters] = useState(false);
-  const [CheckboxGroup, setCheckboxGroup] = useState(['★ ', '★ ★ ', '★ ★ ★ ','★ ★ ★ ★ ','★ ★ ★ ★ ★ ']);
-  const [totalHotel, setTotalHotel] = useState("")
+  const CheckboxGroup = Checkbox.Group;
+
+  const plainOptions = ['Apple', 'Pear', 'Orange'];
+  const defaultCheckedList = ['Apple', 'Orange'];
+
   const hotelHolder = {};
   const guid = () => {
     function s4() {
@@ -193,8 +197,7 @@ const Rooms = (props) => {
 
             console.log("complete-list", newstaticHotel);
 			console.log("complete-list", newstaticHotel.starRating);
-      console.log("total props ",props.location.state.place,Object.keys(newstaticHotel).length)
-      setTotalHotel(Object.keys(newstaticHotel).length)
+			console.log("total props ",props.location.state.place,Object.keys(newstaticHotel).length)
 
             setHotel(Object.values(newstaticHotel));
 
@@ -215,8 +218,7 @@ const Rooms = (props) => {
 
             setFilterMax(max);
             setFilterMin(min);
-
-            setProgress(false);
+		    
           }
 
           return data;
@@ -309,48 +311,7 @@ const Rooms = (props) => {
 
   let filteredHotel = [];
   if (!inProgress) {
-
-    CheckboxGroup.forEach((val) => {
-      switch (val) {
-        case "★ ":
-          filteredHotel = [...filteredHotel, ...hotel.filter( val => val.starRating<2.0&&val.starRating>=1.0)]
-          break;
-        case "★ ★ ":
-          filteredHotel = [...filteredHotel, ...hotel.filter( val => val.starRating<3.0&&val.starRating>=2.0)]
-          break;
-        case "★ ★ ★ ":
-          filteredHotel = [...filteredHotel, ...hotel.filter( val => val.starRating<4.0&&val.starRating>=3.0)]
-          break;
-        case "★ ★ ★ ★ ":
-          filteredHotel = [...filteredHotel, ...hotel.filter( val => val.starRating<5.0&&val.starRating>=4.0)]
-          break;
-        case "★ ★ ★ ★ ★ ":
-          filteredHotel = [...filteredHotel, ...hotel.filter( val => val.starRating==5)]
-          break;
-        case "Free Breakfast":
-          let freeBreakfastData = []
-          for(let i in filteredHotel){
-            if(filteredHotel[i].options && filteredHotel[i].options.freeBreakfast){
-              freeBreakfastData.push(filteredHotel[i])
-            }
-          }
-          filteredHotel = freeBreakfastData;
-          break;
-        case "Pay at Hotel":
-          let payAtHotelData = []
-          for(let i in filteredHotel){
-            if(filteredHotel[i].options && filteredHotel[i].options.payAtHotel){
-              payAtHotelData.push(filteredHotel[i])
-            }
-          }
-          filteredHotel = payAtHotelData;
-          break;
-      }
-    });
-
-    
-
-    filteredHotel = filteredHotel.filter((hotel) => {
+    filteredHotel = hotel.filter((hotel) => {
       return (
         hotel.rate.totalRate >= minFilterPrice &&
         hotel.rate.totalRate <= maxFilterPrice 
@@ -370,7 +331,6 @@ const Rooms = (props) => {
     filteredHotel = filteredHotel.sort(sort_by_price(true));
   }
 
-  
   filteredHotel = filteredHotel.slice(0, perPageContent);
 
   useEffect(() => {
@@ -422,10 +382,6 @@ const Rooms = (props) => {
             history={props.history}
             reset={true}
           />
-
-
-
-            
         )}
 
         <div className="desktopSearch">
@@ -441,9 +397,7 @@ const Rooms = (props) => {
             reset={true}
           />
 		  </div>
-		  <div className="Filtertext">  Filters : </div>
-      <div style={{width: "20.2vw", margin: "0 2rem",border: "double", 
-      "border-radius": "2rem","color": "red","padding-left": "2rem"}}>
+		  <div>
 		  <div className="budgettext">Budget: </div>
 		  <div className="slidermaincontainer">
               
@@ -472,11 +426,7 @@ const Rooms = (props) => {
 			  </div>
 			  </div>
             </div>
-            <Filter handleFilter={handleFilter} />
-			<Check_box_grid
-        setCheckboxGroup={setCheckboxGroup}
-			/>
-		       <div className="fliterMainContainer" {...seeFilterOption} >
+			          <div className="fliterMainContainer" {...seeFilterOption} >
             
             <Slider
               min={minHotelPrice}
@@ -485,9 +435,8 @@ const Rooms = (props) => {
               value={[minFilterPrice, maxFilterPrice]}
               onChange={onChangeRange}
               className="mobileSlider"
-              
             />
-            {/* <Filter handleFilter={handleFilter} /> */}
+            <Filter handleFilter={handleFilter} />
 
             <div className="filterTop desktopCurrency" />
             <div className="filterSelect desktopCurrency">
@@ -507,7 +456,11 @@ const Rooms = (props) => {
               <Option key="QAR">Currency: QAR</Option>
               </Select>
               </div>
-          </div>	
+          </div>
+			<Check_box_grid
+			 
+
+			/>
 		 <div>
            </div>		   
 			</div>
@@ -515,12 +468,10 @@ const Rooms = (props) => {
         </div>
 
         <div className="roomUIList">
-          {totalHotel&&(<div style={{fontSize:'2rem'}}> {props.location.state.place}:  Properties found {totalHotel} Hotels </div>)}
-		  <hr/>
           <div className="FilterControl"
             onClick={()=>setseeFilters(!seeFilters)}
           >
-            <div>Check all </div>
+            <div>Filters</div>
             <div>{seeFilters ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
           </div>
 

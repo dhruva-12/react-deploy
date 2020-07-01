@@ -11,10 +11,7 @@ import './App.css';
 // import Navbar2 from './components/Navbar1/Navbar2/Navbar2'
 // import FooterPage from './pages/Footer';
 import { Route, Switch } from 'react-router-dom';
-import Profile from './pages/Profile'
-
-import LoginPrad from './pages/LoginPrad'
-import SignupPrad from './pages/SignupPrad'
+import Profile from './pages/Profile';
 import LandingPage from './pages/LandingPage';
 import SearchPage from './pages/SearchPage';
 import RoomUI from './components/RoomUI';
@@ -34,15 +31,14 @@ function App() {
         <Route exact path='/home' component={Home} />
         <Route exact path='/rooms' component={Rooms} />
         <Route exact path='/rooms/:slug' component={SingleRoom} />
-        <Route exact path='/login' component={LoginPrad} />
-        <Route exact path='/signup' component={SignupPrad} />
+      
         <Route exact path='/profile' component={Profile} />
         <Route exact path='/cart' component={Cart} />
         <Route exact path='/' component={LandingPage} />
         <Route exact path="/SearchPage" component={SearchPage} />
         <Route exact path="/RoomUI" component={RoomUI} />
         <Route exact path="/Hotel/:slug" component={Hotel} />
-        <Route exact path="/Adminpanel" component={Admin} />
+        <Route exact path='/Admin' component={Admin} />
         <Route exact path="/AboutUs" component={AboutUs} />
         <Route exact path="/ContactUs" component={ContactUs} />
         <Route exact path="/termsandconditions" component={TOS} />

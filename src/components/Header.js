@@ -6,7 +6,7 @@ const Header = (props) => {
     
     const signIn = (
         <Link
-            to="/signup"
+            to="/Admin"
             className="LPLink"
             style={{ marginRight: "10vw" }}
         >

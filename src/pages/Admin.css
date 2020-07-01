@@ -15,6 +15,14 @@
     outline:none;
     box-shadow:none;
   }
+
+  .form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline:none;
+    box-shadow:none;
+  }
   .size{
     width:170px;
     height:100px;
@@ -95,7 +103,7 @@
       color: #df004f;
       box-shadow: 0 2px 4px rgba(0,0,0,0.6);
       line-height: 40px;
-      top:545px;
+      top:510px;
       left:160px;
       padding: 2px;
       width: 40px;
@@ -174,3 +182,37 @@
   .loginBtn--google:focus {
     background: #E74B37;
   }
+  .flag-dropdown {
+    position: absolute;
+    width:0px;
+    background-color: #eaeaea;
+    border: 0px solid #cacaca;
+    border-radius: 3px 0 0 3px;
+  }
+       .open-dropdown {
+      background: #fff;
+      border-bottom: 0;
+      border-radius: 3px 0 0 0;
+       }
+      .selected-flag {
+        background: #fff;
+        border-radius: 3px 0 0 0;
+        width: 25px;
+        margin-top: 30px;
+      }
+    
+    :hover {
+      cursor: pointer;
+    }
+      .selected-flag {
+        background-color: #fff;
+      }
+    
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      }

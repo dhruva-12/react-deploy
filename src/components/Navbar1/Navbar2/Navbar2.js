@@ -7,8 +7,8 @@ export default class Navbar2 extends Component {
 	constructor(props) {
 		super(props);
 		if (
-			props.source === "login" ||
-			props.source === "signup" ||
+			props.source === "Admin" ||
+			props.source === "Admin" ||
 			props.source === "profile" ||
 			props.source === "cart"
 		) {
@@ -55,12 +55,6 @@ export default class Navbar2 extends Component {
 	render() {
 		const loginreg = (
 			<>
-				<li>
-					<Link to="/login">Login</Link>
-				</li>
-				<li>
-					<Link to="/signup">Signup</Link>
-				</li>
 			</>
 		);
 

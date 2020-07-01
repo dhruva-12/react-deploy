@@ -18,14 +18,12 @@
 
 .filterSelect .ant-select-selection {
     border-radius: 1px !important;
-    /* border: none; */
+    border: none;
     width: 80vw;
-    border-color: red;
 
 }
 .ant-input-number {
     font-size: 16px !important;
-    border-color: red;
 }
 .roomFinalMain {
     background: linear-gradient(180deg, rgba(100,151,172,1) 0%, rgba(185,209,219,1) 100%); 
@@ -35,7 +33,7 @@
 }
 
 
- .filter {
+.roomUIList .filter {
     display: none;
 }
 
@@ -98,54 +96,29 @@
 
 .budgettext{
     font-size: 15px;
-    color: black;
+    padding-left: 8%;
     padding-top: 12px;
 }
-.Filtertext{
-    font-size: 20px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    padding-left: 20px;
-}
-
 
 .sliderfilterclassmain{
-	width: 20vw;
+	padding-left:17%
 
 }
-
-.sliderfilterclassmain .sliderStyle {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-.sliderfilterclassmain .sliderStyle div {
-    background-color:red;
-}
-
 .buttonslider{
-margin-left: 80px;
+	float:right;
 }
-
-.ant-checkbox-group .ant-checkbox-wrapper {
-    width: 100% !important;
-}
-
-
 
 @media screen and (min-width: 776px){
-    .filterSelect {
+    .roomUIList .filterSelect {
         /* display: none; */
         width: 20vw;
         /* align-self: flex-end; */
         justify-content: flex-end;
-        margin: 1rem 0;
     }
     .filterSelect .ant-select-selection {
         border-radius: 1px !important;
-        /* border: none; */
-        width: 17vw;
-        border-color: red;
+        border: none;
+        width: 20vw;
     
     }
     .roomUIList .filterTop {
@@ -167,7 +140,7 @@ margin-left: 80px;
     }
     .sliderStyle {
         display: flex;
-        width: 17vw;
+        width: 20vw;
     }
     
     .slidermaincontainer {
@@ -182,10 +155,7 @@ margin-left: 80px;
 
     .ant-input-number {
         width: 90px;
-        
     }
-   
-    
     /* .roomUIList .filter {
         display: flex;
         width: 100%;
