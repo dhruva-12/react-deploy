@@ -50,6 +50,9 @@
   .cus{
     color: #df004f;
     font-weight: bold;
+    width: 150px;
+    height: 40px;
+    font-size: small;
   }
   .or{
   
@@ -103,7 +106,7 @@
       color: #df004f;
       box-shadow: 0 2px 4px rgba(0,0,0,0.6);
       line-height: 40px;
-      top:510px;
+      top:  550px;
       left:160px;
       padding: 2px;
       width: 40px;
@@ -115,8 +118,11 @@
     
   }
   .cus1{
-    color:white;
+    font-size: small;
+    color: white;
     font-weight: bold;
+    width: 150px;
+    height: 40px;
   }
   
   /* Shared */
@@ -173,6 +179,7 @@
   .loginBtn--google {
     /*font-family: "Roboto", Roboto, arial, sans-serif;*/
     background: #DD4B39;
+    width: 226px;
   }
   .loginBtn--google:before {
     border-right: #BB3F30 1px solid;
@@ -214,5 +221,11 @@
         display: inline-block;
         padding: 3px;
         transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+       -webkit-transform: rotate(45deg);
       }
+
+      .ml-5, .mx-5 {
+        margin-left: 1.2rem!important;
+    }
+    
+    

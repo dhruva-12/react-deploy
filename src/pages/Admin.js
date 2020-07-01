@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Link } from "react-router-dom";
 import ReactTelInput from "react-telephone-input";
 import "./Admin.css";
-//import flags from './images/flags.png';
-import flags from "./../images/flags.png";
+
+
 
 //var ReactTelInput = require('react-telephone-input');
 function handleInputChange(telNumber, selectedCountry) {
@@ -25,6 +25,7 @@ function handleInputBlur(telNumber, selectedCountry) {
   );
 }
 export default class Admin extends Component {
+  
   render() {
     return (
       <div className="d-md-flex h-md-100 align-items-left">
@@ -37,7 +38,7 @@ export default class Admin extends Component {
                   className="img-fluid mt-1 mb-1 w-25"
                   alt="Logo"
                 />
-
+                 <br></br>
                 <br></br>
                 <br></br>
 
@@ -60,12 +61,14 @@ export default class Admin extends Component {
                   numbers and special characters, but must not contain spaces.
                 </small>
               </div>
+              <br></br>
+              <br></br>
               <button type="button" className="btn bg-pink float-right cus1">
                 LOG IN
               </button>
               <br></br>
-
-              <p className="text-black cor">Sign in with Social Network</p>
+              <br></br>
+              <br></br>
               <br></br>
               <button className="loginBtn loginBtn--facebook">
                 Login with Facebook
@@ -114,8 +117,8 @@ export default class Admin extends Component {
                 </small>
               </div>
 
-              <button type="button" className="btn bg-white cus">
-                SIGN ME UP
+              <button type="button" className="btn bg-white float-right cus">
+                SIGN  UP
               </button>
             </form>
           </div>

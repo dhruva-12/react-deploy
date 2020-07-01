@@ -174,7 +174,7 @@ export default class LandingPage extends Component {
 								className="LPLink"
 								style={{ marginRight: "10vw" }}
 							>
-								Sign In/Sign up
+								Sign In
 							</Link>
 						</div>
 
@@ -272,7 +272,7 @@ export default class LandingPage extends Component {
 							className="LPLink"
 							style={{ marginRight: "10vw" }}
 						>
-							Sign In/Sign up
+							Sign In
 						</Link>
 					</div>
 
