@@ -50,8 +50,8 @@
   .cus{
     color: #df004f;
     font-weight: bold;
-    width: 150px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     font-size: small;
   }
   .or{
@@ -107,12 +107,13 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.6);
       line-height: 40px;
       top:  550px;
-      left:160px;
+      left:150px;
       padding: 2px;
       width: 40px;
       height:40px;
       bottom: 50px;
       text-align: center;
+      align-items: center;
     
     } 
     
@@ -121,7 +122,7 @@
     font-size: small;
     color: white;
     font-weight: bold;
-    width: 150px;
+    width: 100px;
     height: 40px;
   }
   
@@ -179,7 +180,7 @@
   .loginBtn--google {
     /*font-family: "Roboto", Roboto, arial, sans-serif;*/
     background: #DD4B39;
-    width: 226px;
+    width: 208px;
   }
   .loginBtn--google:before {
     border-right: #BB3F30 1px solid;
